@@ -1,0 +1,23 @@
+﻿@model JsReportTest.Models.LabelModel
+<html>
+<head>
+    <style>
+        .text-center {
+            text-align: center !important;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 0.85em !important;
+        }
+    </style>
+</head>
+<body>
+    <div style="width:280px;">
+        <img style="width:90%" src="data:image/jgp;base64,@Model.Src" />
+        <p class="text-center"> @Model.Fnsku </p>
+        <p><span style="font-size:0.75em;">@Model.Title</span></p>
+    </div>
+</body>
+</html>
